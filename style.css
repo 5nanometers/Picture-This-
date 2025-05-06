@@ -191,6 +191,19 @@ nav ul {
     padding-bottom: 20px;
 }
 
+.login-container {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    padding: auto;
+
+}
+
+.login-container button {
+    background-color: #rgb(94, 94, 160);
+    padding: auto;
+    border-radius: 5px;
+}
+
 @media (max-width: 600px) {
     .search-form {
         max-width: 90vw;
