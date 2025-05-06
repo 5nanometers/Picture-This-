@@ -1,0 +1,25 @@
+[
+    {
+        "id": "contax-t2",
+        "name": "Contax T2",
+        "price": 800,
+        "image": "/",
+        "description": "Compact 35mm film camera with Zeiss lens"
+    },
+
+    {
+        "id": "ricoh-gr",
+        "name": "Ricoh GR",
+        "price": 650,
+        "image": "/",
+        "description": "Pocketable digital camera with wide-angle lens"
+    },
+
+    {
+        "id": "leica-m6",
+        "name": "Leica M6",
+        "price": 2000,
+        "image": "/",
+        "description": "Premium 35mm rangefinder film camera"
+    },
+]

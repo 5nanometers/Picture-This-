@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Picture This: Camera Shop</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="website-logo-container">
+            <div class="website-logo">Picture This!</div>
+            <div class="website-subtext">Online Camera Shop</div>
+
+        </div>
+
+        <nav>
+            <div class="search-container">
+                <form class="search-form">
+                    <input class="search-input" type="search" placeholder="Search for anything" />
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+
+
+            <ul>
+                <li><a href="index.html">Sale</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                </li><a href="sell.html">Sell</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="navbar-buttons">
+            <a href="/favorites.html" title="Favorites"><i class fa-regular fa-heart></i></a>
+            <a href="/profile.html" title="Profile"><i class=" fa-regular fa-user"></i></a>
+            <a href="/shopping-cart.html" title="Cart"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </header>
+
+
+    <div class="main-content">
+        <section class="promotional-banner" id="promotional-banner">
+            <img src="../images/mothers-day.jpeg" alt="Mother's Day Deals">
+    
+            <!-- Will be dynamically loaded -->
+        </section>
+    
+    
+        <section class="deals-section">
+            <div class="deals-header">Today's Deals</div>
+            <div class="deals-subtext">Recently added items</div>
+    
+            <div class="deals-items" id="deals-items">
+                <!-- <img src="{{image}}" alt="{{name}}">
+                    <h3>{{name}}</h3>
+                    <p>${{price}}</p>
+                    <a href="product.html?id={{id}}" class="btn"> View Details</a> -->
+    
+                <!-- Dynamically loaded -->
+            </div>
+        </section>
+    </div>
+    
+
+    <!-- Promo banner section script -->
+    <!-- <script>
+        const promotions = [
+            {
+                "title": "New Arrivals",
+                "image": "../"
+            },
+            {
+                "title": "Mother's Day Sale" ,
+                "image": "../mothers-day.jpeg"
+            },
+        ];
+
+        const promoContainer = document.getElementById("promotional-banner");
+
+        promotions.forEach(promo => {
+            const card = document.createElement("div");
+            // card.className = "promo-card";
+            card.innerHTML = `
+                <h3>${promo.title}</h3> alt=""
+                `;
+            promoContainer.appendChild(card);
+        });
+    </script> -->
+
+    <!-- New deals section script -->
+    <script>
+        const products = [
+            {
+                "id": "contax-t2",
+                "name": "Contax T2",
+                "price": 800,
+                "image": "../images/contax-t2.jpg",
+                "description": "Compact 35mm film camera with Zeiss lens"
+            },
+
+            {
+                "id": "ricoh-gr",
+                "name": "Ricoh GR",
+                "price": 650,
+                "image": "../images/ricoh-gr.jpg",
+                "description": "Pocketable digital camera with wide-angle lens"
+            },
+
+            {
+                "id": "leica-m6",
+                "name": "Leica M6",
+                "price": 2000,
+                "image": "../images/leica-m6.jpg",
+                "description": "Premium 35mm rangefinder film camera"
+            },
+        ]
+
+        const dealsContainer = document.getElementById("deals-items");
+
+        products.forEach(product => {
+            const card = document.createElement("div");
+            card.className = "product-card";
+            card.innerHTML = `
+                <img src="${product.image}" alt="${product.name}">
+                <h3>${product.name}</h3>
+                <p>$${product.price}</p>
+                <a href="product.html?id=${product.id}" class="btn">View Details</a>
+                `;
+
+            dealsContainer.appendChild(card);
+        });
+    </script>
+
+    <div class="footer">
+        <div class="footer-notes">
+            <div class="social">
+                <h3>Follow us on:</h3>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>
+
+            <div class="newsletter">
+                <h3>Subscribe for new deals:</h3>
+                <input type="text" placeholder="Email address" name="mail" />
+                <input type="submit" value="Subscribe" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
